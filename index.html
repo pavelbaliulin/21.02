@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <!-- <ul>
+        <li></li>
+    </ul>
+    <ul style="color: red; font-size: 21px"></ul>
+    <style>
+        ul {
+            width: 50vw;
+        }
+
+        .acrive {
+            color: green !important;
+        }
+    </style> -->
+    <script>
+        // var a = [10, 23, 101, 890];
+        // var ul = document.querySelector('ul');
+        // a.forEach(e => {
+        //     ul.innerHTML += `<li>${e}</li>`;
+
+        // });
+        // ul.removeAttribute('class');
+        // ul.getAttribute()
+        // ul.setAttribute()
+        // ul.hasAttribute()
+        // ul.removeAttribute()
+        // ul.classList.add('active');
+        // ul.classList.remove('active');
+        // console.log(ul.classList.contains('active'));
+        // setInterval => ((){
+        //     ul.classList.toggle('active');
+        // }, 1000)
+
+
+        // var userInput = +prompt("num");
+        // let index = -1;
+        // if (index === 1) {
+        //     if (a[a.length - 1] < userInput) {
+        //         a.push(userInput);
+        //         index = a.length - 1;
+
+        //     } else {
+        //         a.unshift(userInput);
+        //         index = 0;
+        //     }
+
+
+
+
+        // } else {
+        //     a.splice(index, 0, userInput)
+        // }
+        // let li = document.createElement('li');
+        // li.innerHTML = userInput;
+        // ul.insertBefore(li, ul.children[index]);
+        // console.log(ul.children);
+
+    </script>
+    <script>
+        // function _click(i, id) {
+        //     let n = +document.querySelector('h1').innerText;
+        //     n += i;
+        //     document.querySelector('h1').innerText = n;
+        //     let b = document.querySelector('.click');
+        //     if (b) b.classList.remove('click');
+
+        //     document.querySelector(`#${id}`).classList.toggle('click');
+
+
+        // }
+        let id = null;
+        let h1_html = 10;
+        function _click() {
+            id = setInterval(() => {
+                h1_html--;
+                document.querySelector('h1').innerHTML = h1_html;
+                if (!h1_html) {
+                    clearInterval(id);
+                }
+            }, 100);
+        }
+
+    </script>
+    <style>
+        /* div {
+            width: fit-content;
+            height: fit-content;
+            padding: 0 5px;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 1px 1px 2px 1px rebeccapurple;
+
+        }
+
+        .click {
+            box-shadow: none;
+        } */
+
+        .sun {
+            border-radius: 50px;
+            position: relative;
+            top: 50px;
+            background-color: black;
+            right: 100px;
+
+
+        }
+
+        .but {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            height: 20px;
+            width: 40px;
+        }
+
+        .run {
+            position: relative;
+            top: 50px;
+            left: 350px;
+            height: 20px;
+            width: 40px;
+        }
+    </style>
+    <!-- <div id="test1" onclick="_click(1, 'test1');">like</div>
+    <div id="test2" onclick="_click(-1, 'test2');">dislike</div>
+    <h1></h1> -->
+    <div class="sun"></div>
+    <button class="but">+1c</button>
+    <button class="run">run</button>
+
+</body>
+
+</html>
